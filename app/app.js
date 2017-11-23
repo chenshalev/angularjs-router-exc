@@ -1,4 +1,4 @@
-var App = angular.module("App", ["ngRoute"]);
+var movieApp = angular.module("movieApp", ["ngRoute"]);
 
 App.config(function($routeProvider) {
     $routeProvider
