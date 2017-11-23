@@ -1,14 +1,11 @@
 var movieApp = angular.module("movieApp", ["ngRoute"]);
 
-App.config(function($routeProvider) {
+movieApp.config(function($routeProvider) {
     $routeProvider
-    .when("/home", {
+    .when("/", {
         templateUrl: "app/home.html"
     })
-})
-
-
-App.controller("TestCtrl", function() {
-    console.log("testctrl");
-
+    .otherwise({
+        redirectTo: "/"
+      });
 });
